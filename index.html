@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Град Лозница | Званична презентација</title>
+
+    <!-- SEO META TAGOVI -->
+    <meta name="description"
+        content="Званична презентација града Лознице. Информације о историји, култури, туризму, спорту, образовању и актуелним вестима.">
+
+    <meta name="keywords"
+        content="Лозница, град Лозница, Подриње, туризам, култура, спорт, образовање, вести, Бања Ковиљача">
+
+    <meta name="author" content="Marko Jakovljević">
+
+    <meta name="language" content="sr">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./slike/favicon.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar bg-body-tertiary px-3">
+        <div class="upper-nav w-100 mb-2">
+            <div class="row text-center">
+                <div class="col-3 d-flex justify-content-center align-items-center gap-3">
+                    <i class="bi bi-calendar3"></i>
+                    <span id="trenutniDatum">--.--.----</span>
+
+                    <i class="bi bi-clock-history"></i>
+                    <span id="trenutnoVreme">--:--:--</span>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid d-flex justify-content-center align-items-center gap-3 flex-wrap py-2">
+
+            <a href="index.html">
+                <img src="./slike/grb.png" alt="Лого" class="img-fluid" style="max-height: 90px; height: auto;">
+            </a>
+
+            <a href="index.html">
+                <img src="./slike/baner.jpg" alt="Банер" class="img-fluid" style="max-height: 90px; height: auto;">
+            </a>
+
+        </div>
+
+        <!-- Main Menu -->
+        <div class="d-flex justify-content-center w-100">
+            <ul class="nav nav-pills justify-content-center gap-3 py-2">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Почетна</a>
+                </li>
+
+                <!-- GRAD DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        Град
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="ogradu.html">О граду</a></li>
+                        <li><a class="dropdown-item" href="kultura.html">Култура</a></li>
+                        <li><a class="dropdown-item" href="simboli.html">Симболи града</a></li>
+                        <li><a class="dropdown-item" href="turizam.html">Туризам</a></li>
+                        <li><a class="dropdown-item" href="sport.html">Спорт</a></li>
+                        <li><a class="dropdown-item" href="obrazovanje.html">Образовање</a></li>
+                    </ul>
+                </li>
+
+                <!-- INFO DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        Информације
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="vesti.html">Вести</a></li>
+                        <li><a class="dropdown-item" href="faq.html">Честа питања</a></li>
+                        <li><a class="dropdown-item" href="mapasajta.html">Мапа сајта</a></li>
+                        <li><a class="dropdown-item" href="stampanje.html" target="_blank">Страна за штампу</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="galerija.html">Галерија</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Контакт</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section py-5 text-center">
+        <h1 class="display-4 fw-bold pozeleni">
+            <span>Добродошли </span>
+            <span>у </span>
+            <span>Лозницу</span>
+        </h1>
+        <p class="lead pozeleni">Град богате историје, културе и будућности.</p>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about-section" class="py-5">
+        <div class="container">
+            <div class="about-card p-5">
+                <h2 class="mb-4 text-center">О граду</h2>
+
+                <div class="row align-items-center g-5">
+                    <!-- TEKST -->
+                    <div class="col-md-6">
+                        <p class="abtext">
+                            Лозница је један од најлепших градова западне Србије. Позната по богатој традицији,
+                            природним лепотама и историјском значају, представља савршен спој културе и модерног
+                            развоја.
+                        </p>
+                        <p class="abtext">
+                            У околини се налази чувена Бања Ковиљача, Тршић – родно место Вука Караџића,
+                            као и бројне природне атракције које чине овај крај посебним.
+                        </p>
+                    </div>
+
+                    <!-- CAROUSEL -->
+                    <div class="col-md-6">
+                        <div id="aboutCarousel" class="carousel slide shadow rounded overflow-hidden"
+                            data-bs-ride="carousel">
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./slike/loznica.jpg" class="d-block w-100 about-img" alt="Лозница">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./slike/loznica2.jpg" class="d-block w-100 about-img" alt="Лозница">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./slike/loznica3.jpg" class="d-block w-100 about-img" alt="Лозница">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./slike/loznica4.jpg" class="d-block w-100 about-img" alt="Лозница">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./slike/loznica5.jpg" class="d-block w-100 about-img" alt="Лозница">
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- KULTURA -->
+    <section id="kultura" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Култура</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./slike/trsic.jpg" class="card-img-top" alt="Тршић">
+                        <div class="card-body">
+                            <h5 class="card-title">Тршић</h5>
+                            <p class="card-text">Родно место Вука Караџића, једно од најзначајнијих културних подручја у
+                                Србији.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./slike/banja.jpg" class="card-img-top" alt="Бања Ковиљача">
+                        <div class="card-body">
+                            <h5 class="card-title">Бања Ковиљача</h5>
+                            <p class="card-text">Једно од најстаријих и најлепших лечилишта у Србији.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./slike/gucevo.jpg" class="card-img-top" alt="Гучево">
+                        <div class="card-body">
+                            <h5 class="card-title">Гучево</h5>
+                            <p class="card-text">Планина са богатом традицијом и прелепим погледом на Дрину.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VESTI -->
+    <section id="vesti" class="container py-5">
+        <h2 class="text-center mb-4">Најновије вести</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="./slike/vest1.jpg" class="card-img-top" alt="Вест 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Свечано затворен 92. Вуков сабор у Тршићу</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-success">Прочитај више</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="./slike/vest2.jpg" class="card-img-top" alt="Вест 2">
+                    <div class="card-body">
+                        <h5 class="card-title">ОТВОРЕН 92. ВУКОВ САБОР</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-success">Прочитај више</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="./slike/vest3.jpg" class="card-img-top" alt="Вест 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Лозница добила нову градоначелницу: Драгана Лукић на челу града</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-success">Прочитај више</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--MAPA-->
+    <section id="mapa" class="container py-5">
+        <h2 class="text-center mb-4">Локација града</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="ratio ratio-16x9 shadow-lg rounded overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28486.873529381398!2d19.21470!3d44.53330!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b18f5bb2d9e8f%3A0x63fbf0c42fbaa3ca!2sLoznica!5e0!3m2!1ssr!2srs!4v1700000000000"
+                        style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <!-- O GRADU -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Град Лозница</h5>
+                    <p class="text-secondary">
+                        Лозница је град богате историје, културе и природних лепота,
+                        смештен у срцу Подриња.
+                    </p>
+                </div>
+
+                <!-- BRZI LINKOVI -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Брзи линкови</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="vesti.html" class="text-secondary text-decoration-none">Вести</a></li>
+                        <li><a href="turizam.html" class="text-secondary text-decoration-none">Туризам</a></li>
+                        <li><a href="galerija.html" class="text-secondary text-decoration-none">Галерија</a></li>
+                        <li><a href="kontakt.html" class="text-secondary text-decoration-none">Контакт</a></li>
+                    </ul>
+                </div>
+
+                <!-- KONTAKT -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Контакт</h5>
+                    <p class="text-secondary mb-1">
+                        <i class="bi bi-envelope"></i> kontakt@loznica.rs
+                    </p>
+                    <p class="text-secondary mb-1">
+                        <i class="bi bi-telephone"></i> +381 15 123 456
+                    </p>
+                    <p class="text-secondary">
+                        <i class="bi bi-geo-alt"></i> Лозница, Србија
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="text-secondary">
+
+            <!-- DONJI DEO -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0 text-secondary">
+                    © 2025 Град Лозница. Сва права задржана.
+                </p>
+
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./slike/viser.png" alt="Лого" style="height: 32px;">
+                    <span class="text-secondary">Марко Јаковљевић</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+<script>
+    function updateDateTime() {
+        // vreme
+        const timeOptions = {
+            timeZone: "Europe/Belgrade",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit"
+        };
+        const nowTime = new Date().toLocaleTimeString("sr-RS", timeOptions);
+        document.getElementById("trenutnoVreme").textContent = nowTime;
+
+        // datum
+        const dateOptions = {
+            timeZone: "Europe/Belgrade",
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric"
+        };
+        const nowDate = new Date().toLocaleDateString("sr-RS", dateOptions);
+        document.getElementById("trenutniDatum").textContent = nowDate;
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+</script>
+
+</html>

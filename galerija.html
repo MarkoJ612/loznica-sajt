@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерија Града Лознице</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/galerijastyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./slike/favicon.png">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar bg-body-tertiary px-3">
+        <div class="upper-nav w-100 mb-2">
+            <div class="row text-center">
+                <div class="col-3 d-flex justify-content-center align-items-center gap-3">
+                    <i class="bi bi-calendar3"></i>
+                    <span id="trenutniDatum">--.--.----</span>
+
+                    <i class="bi bi-clock-history"></i>
+                    <span id="trenutnoVreme">--:--:--</span>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid d-flex justify-content-center align-items-center gap-3 flex-wrap py-2">
+
+            <a href="index.html">
+                <img src="./slike/grb.png" alt="Лого" class="img-fluid" style="max-height: 90px; height: auto;">
+            </a>
+
+            <a href="index.html">
+                <img src="./slike/baner.jpg" alt="Банер" class="img-fluid" style="max-height: 90px; height: auto;">
+            </a>
+
+        </div>
+        <!-- Main Menu -->
+        <div class="d-flex justify-content-center w-100">
+            <ul class="nav nav-pills justify-content-center gap-3 py-2">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Почетна</a>
+                </li>
+
+                <!-- GRAD DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        Град
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="ogradu.html">О граду</a></li>
+                        <li><a class="dropdown-item" href="kultura.html">Култура</a></li>
+                        <li><a class="dropdown-item" href="simboli.html">Симболи града</a></li>
+                        <li><a class="dropdown-item" href="turizam.html">Туризам</a></li>
+                        <li><a class="dropdown-item" href="sport.html">Спорт</a></li>
+                        <li><a class="dropdown-item" href="obrazovanje.html">Образовање</a></li>
+                    </ul>
+                </li>
+
+                <!-- INFO DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        Информације
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="vesti.html">Вести</a></li>
+                        <li><a class="dropdown-item" href="faq.html">Честа питања</a></li>
+                        <li><a class="dropdown-item" href="mapasajta.html">Мапа сајта</a></li>
+                        <li><a class="dropdown-item" href="stampanje.html" target="_blank">Страна за штампу</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="galerija.html">Галерија</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Контакт</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- GALERIJA -->
+    <section class="container py-5">
+        <h2 id="naslov" class="text-center mb-4">ГАЛЕРИЈА</h2>
+
+        <div class="row g-4">
+
+            <!-- Slika 1 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal1.jpg" class="galerija-slika" alt="Слика 1" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 2 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal2.jpg" class="galerija-slika" alt="Слика 2" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 3 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal3.jpg" class="galerija-slika" alt="Слика 3" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 4 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal4.jpg" class="galerija-slika" alt="Слика 4" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 5 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal5.jpg" class="galerija-slika" alt="Слика 5" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 6 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal6.jpg" class="galerija-slika" alt="Слика 6" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 7 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal7.jpg" class="galerija-slika" alt="Слика 7" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 8 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal8.jpg" class="galerija-slika" alt="Слика 8" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 9 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal9.jpg" class="galerija-slika" alt="Слика 9" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 10 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal10.jpg" class="galerija-slika" alt="Слика 10" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 11 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal11.jpg" class="galerija-slika" alt="Слика 11" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 12 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal12.jpg" class="galerija-slika" alt="Слика 12" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+            <!-- Slika 13 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal13.jpg" class="galerija-slika" alt="Слика 13" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 14 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal14.jpg" class="galerija-slika" alt="Слика 14" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 15 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal15.jpg" class="galerija-slika" alt="Слика 15" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 16 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal16.jpg" class="galerija-slika" alt="Слика 16" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 17 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal17.jpg" class="galerija-slika" alt="Слика 17" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 18 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal18.jpg" class="galerija-slika" alt="Слика 18" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 19 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal19.jpg" class="galerija-slika" alt="Слика 19" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 20 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal20.jpg" class="galerija-slika" alt="Слика 20" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 21 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal21.jpg" class="galerija-slika" alt="Слика 21" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 22 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal22.jpg" class="galerija-slika" alt="Слика 22" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 23 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal23.jpg" class="galerija-slika" alt="Слика 23" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <!-- Slika 24 -->
+            <div class="col-md-4">
+                <div class="galerija-item">
+                    <img src="./slike/gal24.jpg" class="galerija-slika" alt="Слика 24" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <!-- O GRADU -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Град Лозница</h5>
+                    <p class="text-secondary">
+                        Лозница је град богате историје, културе и природних лепота,
+                        смештен у срцу Подриња.
+                    </p>
+                </div>
+
+                <!-- BRZI LINKOVI -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Брзи линкови</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="vesti.html" class="text-secondary text-decoration-none">Вести</a></li>
+                        <li><a href="turizam.html" class="text-secondary text-decoration-none">Туризам</a></li>
+                        <li><a href="galerija.html" class="text-secondary text-decoration-none">Галерија</a></li>
+                        <li><a href="kontakt.html" class="text-secondary text-decoration-none">Контакт</a></li>
+                    </ul>
+                </div>
+
+                <!-- KONTAKT -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Контакт</h5>
+                    <p class="text-secondary mb-1">
+                        <i class="bi bi-envelope"></i> kontakt@loznica.rs
+                    </p>
+                    <p class="text-secondary mb-1">
+                        <i class="bi bi-telephone"></i> +381 15 123 456
+                    </p>
+                    <p class="text-secondary">
+                        <i class="bi bi-geo-alt"></i> Лозница, Србија
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="text-secondary">
+
+            <!-- DONJI DEO -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0 text-secondary">
+                    © 2025 Град Лозница. Сва права задржана.
+                </p>
+
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./slike/viser.png" alt="Лого" style="height: 32px;">
+                    <span class="text-secondary">Марко Јаковљевић</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<script>
+    function updateDateTime() {
+        // vreme
+        const timeOptions = {
+            timeZone: "Europe/Belgrade",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit"
+        };
+        const nowTime = new Date().toLocaleTimeString("sr-RS", timeOptions);
+        document.getElementById("trenutnoVreme").textContent = nowTime;
+
+        // datum
+        const dateOptions = {
+            timeZone: "Europe/Belgrade",
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric"
+        };
+        const nowDate = new Date().toLocaleDateString("sr-RS", dateOptions);
+        document.getElementById("trenutniDatum").textContent = nowDate;
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+</script>
+<script>
+    function openLightbox(src) {
+        document.getElementById("lightbox-img").src = src;
+        document.getElementById("lightbox").style.display = "flex";
+    }
+    function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+    }
+</script>
+
+</html>

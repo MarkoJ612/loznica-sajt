@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Град Лозница | Званична презентација</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/ogradustyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./slike/favicon.png">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar bg-body-tertiary px-3">
+        <div class="upper-nav w-100 mb-2">
+            <div class="row text-center">
+                <div class="col-3 d-flex justify-content-center align-items-center gap-3">
+                    <i class="bi bi-calendar3"></i>
+                    <span id="trenutniDatum">--.--.----</span>
+
+                    <i class="bi bi-clock-history"></i>
+                    <span id="trenutnoVreme">--:--:--</span>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid d-flex justify-content-center align-items-center gap-3 flex-wrap py-2">
+
+            <a href="index.html">
+                <img src="./slike/grb.png" alt="Лого" class="img-fluid" style="max-height: 90px; height: auto;">
+            </a>
+
+            <a href="index.html">
+                <img src="./slike/baner.jpg" alt="Банер" class="img-fluid" style="max-height: 90px; height: auto;">
+            </a>
+
+        </div>
+
+        <!-- Main Menu -->
+        <div class="d-flex justify-content-center w-100">
+            <ul class="nav nav-pills justify-content-center gap-3 py-2">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Почетна</a>
+                </li>
+
+                <!-- GRAD DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        Град
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="ogradu.html">О граду</a></li>
+                        <li><a class="dropdown-item" href="kultura.html">Култура</a></li>
+                        <li><a class="dropdown-item" href="simboli.html">Симболи града</a></li>
+                        <li><a class="dropdown-item" href="turizam.html">Туризам</a></li>
+                        <li><a class="dropdown-item" href="sport.html">Спорт</a></li>
+                        <li><a class="dropdown-item" href="obrazovanje.html">Образовање</a></li>
+                    </ul>
+                </li>
+
+                <!-- INFO DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        Информације
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="vesti.html">Вести</a></li>
+                        <li><a class="dropdown-item" href="faq.html">Честа питања</a></li>
+                        <li><a class="dropdown-item" href="mapasajta.html">Мапа сајта</a></li>
+                        <li><a class="dropdown-item" href="stampanje.html" target="_blank">Страна за штампу</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="galerija.html">Галерија</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Контакт</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4 fw-bold">О граду Лозници</h2>
+
+        <div class="row align-items-center">
+            <!-- Tekst -->
+            <div class="col-md-6">
+                <p class="lead">
+                    <b>Лозница</b> је град смештен у западној Србији, познат по богатој историји,
+                    природним лепотама и значајним културним споменицима. Као један од
+                    најразвијенијих градова овог краја, Лозница представља важан центар
+                    Подриња и место које спаја традицију и модерни развој.
+                </p>
+
+                <ul class="list-group my-4">
+                    <li class="list-group-item">📍 Број становника: око 80.000</li>
+                    <li class="list-group-item">🏞️ Природна одлика: Гучево и Дрина</li>
+                    <li class="list-group-item">🏛️ Позната места: Тршић, Троноша, Бања Ковиљача</li>
+                    <li class="list-group-item">📅 Први пут се помиње у 14. веку</li>
+                </ul>
+            </div>
+
+            <!-- Slika grada -->
+            <div class="col-md-6 text-center">
+                <img src="./slike/ogr.jpg" class="img-fluid rounded shadow" alt="Лозница">
+            </div>
+        </div>
+
+        <!-- Zanimljivosti -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="fw-bold mb-3">Занимљивости</h4>
+                        <p class="mb-0">
+                            • Лозница је родни крај Вука Стефановића Караџића. <br>
+                            • На Гучеву се одиграла чувена битка са почетка Првог светског рата. <br>
+                            • На планини Цер, недалеко од Лознице, одиграла се историјска Церска битка 1914. године –
+                            прва савезничка победа у Првом светском рату. <br>
+                            • Бања Ковиљача је једна од најстаријих бања на Балкану и позната туристичка дестинација.
+                            <br>
+                            • Река Дрина је идеална за рафтинг и представља природну границу са Босном.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRSIC -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="./slike/trsic.jpg" class="img-fluid rounded shadow" alt="Тршић">
+            </div>
+            <div class="col-md-6">
+                <h3 class="fw-bold">Тршић</h3>
+                <p class="lead">
+                    Родни крај Вука Караџића, један од најзначајнијих културно-историјских локалитета у Србији.
+                    Познат по манифестацији „Вуков сабор“ и очуваним традиционалним кућама, Тршић представља
+                    живи музеј српског језика, писма и културе.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRONOSA -->
+    <section class="container my-5">
+        <div class="row align-items-center flex-md-row-reverse">
+            <div class="col-md-6">
+                <img src="./slike/tronosa.jpg" class="img-fluid rounded shadow" alt="Троноша">
+            </div>
+            <div class="col-md-6">
+                <h3 class="fw-bold">Манастир Троноша</h3>
+                <p class="lead">
+                    Манастир основан у 14. веку, познат по својој духовној вредности и историјској улози.
+                    Из Троноше потиче мушка школа коју је похађао млади Вук Караџић.
+                    Ово место и данас представља један од стубова православља у Подрињу.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DRINA -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="./slike/drina.jpg" class="img-fluid rounded shadow" alt="Дрина">
+            </div>
+            <div class="col-md-6">
+                <h3 class="fw-bold">Река Дрина</h3>
+                <p class="lead">
+                    Једна од најлепших река на Балкану, позната по зеленој боји и изузетној чистоћи.
+                    Дрина је омиљена дестинација за рафтинг, риболов и одмор у природи.
+                    Представља природну границу између Србије и Босне.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUCEVO -->
+    <section class="container my-5">
+        <div class="row align-items-center flex-md-row-reverse">
+            <div class="col-md-6">
+                <img src="./slike/gucevo.jpg" class="img-fluid rounded shadow" alt="Гучево">
+            </div>
+            <div class="col-md-6">
+                <h3 class="fw-bold">Гучево</h3>
+                <p class="lead">
+                    Планина изнад Лознице позната по историјској бици из 1914. године.
+                    Пуно планинарских стаза, видиковаца и природних лепота чине Гучево
+                    идеалним местом за излете и активан одмор.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <!-- O GRADU -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Град Лозница</h5>
+                    <p class="text-secondary">
+                        Лозница је град богате историје, културе и природних лепота,
+                        смештен у срцу Подриња.
+                    </p>
+                </div>
+
+                <!-- BRZI LINKOVI -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Брзи линкови</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="vesti.html" class="text-secondary text-decoration-none">Вести</a></li>
+                        <li><a href="turizam.html" class="text-secondary text-decoration-none">Туризам</a></li>
+                        <li><a href="galerija.html" class="text-secondary text-decoration-none">Галерија</a></li>
+                        <li><a href="kontakt.html" class="text-secondary text-decoration-none">Контакт</a></li>
+                    </ul>
+                </div>
+
+                <!-- KONTAKT -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Контакт</h5>
+                    <p class="text-secondary mb-1">
+                        <i class="bi bi-envelope"></i> kontakt@loznica.rs
+                    </p>
+                    <p class="text-secondary mb-1">
+                        <i class="bi bi-telephone"></i> +381 15 123 456
+                    </p>
+                    <p class="text-secondary">
+                        <i class="bi bi-geo-alt"></i> Лозница, Србија
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="text-secondary">
+
+            <!-- DONJI DEO -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0 text-secondary">
+                    © 2025 Град Лозница. Сва права задржана.
+                </p>
+
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./slike/viser.png" alt="Лого" style="height: 32px;">
+                    <span class="text-secondary">Марко Јаковљевић</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<script>
+    function updateDateTime() {
+        // vreme
+        const timeOptions = {
+            timeZone: "Europe/Belgrade",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit"
+        };
+        const nowTime = new Date().toLocaleTimeString("sr-RS", timeOptions);
+        document.getElementById("trenutnoVreme").textContent = nowTime;
+
+        // datum
+        const dateOptions = {
+            timeZone: "Europe/Belgrade",
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric"
+        };
+        const nowDate = new Date().toLocaleDateString("sr-RS", dateOptions);
+        document.getElementById("trenutniDatum").textContent = nowDate;
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+</script>
+
+</html>

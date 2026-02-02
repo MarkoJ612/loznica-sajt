@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Град Лозница | Званична презентација</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./slike/favicon.png">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar bg-body-tertiary px-3">
+        <div class="upper-nav w-100 mb-2">
+            <div class="row text-center">
+                <div class="col-3 d-flex justify-content-center align-items-center gap-3">
+                    <i class="bi bi-calendar3"></i>
+                    <span id="trenutniDatum">--.--.----</span>
+
+                    <i class="bi bi-clock-history"></i>
+                    <span id="trenutnoVreme">--:--:--</span>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid d-flex justify-content-center align-items-center gap-3 flex-wrap py-2">
+
+            <a href="index.html">
+                <img src="./slike/grb.png" alt="Лого" class="img-fluid" style="max-height: 90px; height: auto;">
+            </a>
+
+            <a href="index.html">
+                <img src="./slike/baner.jpg" alt="Банер" class="img-fluid" style="max-height: 90px; height: auto;">
+            </a>
+
+        </div>
+
+        <!-- Main Menu -->
+        <div class="d-flex justify-content-center w-100">
+            <ul class="nav nav-pills justify-content-center gap-3 py-2">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Почетна</a>
+                </li>
+
+                <!-- GRAD DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        Град
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="ogradu.html">О граду</a></li>
+                        <li><a class="dropdown-item" href="kultura.html">Култура</a></li>
+                        <li><a class="dropdown-item" href="simboli.html">Симболи града</a></li>
+                        <li><a class="dropdown-item" href="turizam.html">Туризам</a></li>
+                        <li><a class="dropdown-item" href="sport.html">Спорт</a></li>
+                        <li><a class="dropdown-item" href="obrazovanje.html">Образовање</a></li>
+                    </ul>
+                </li>
+
+                <!-- INFO DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        Информације
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="vesti.html">Вести</a></li>
+                        <li><a class="dropdown-item" href="faq.html">Честа питања</a></li>
+                        <li><a class="dropdown-item" href="mapasajta.html">Мапа сајта</a></li>
+                        <li><a class="dropdown-item" href="stampanje.html" target="_blank">Страна за штампу</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="galerija.html">Галерија</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Контакт</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+
+        <h2 class="text-center mb-4">Спорт</h2>
+
+        <p>
+            Лозница је град спорта. Бројни спортски клубови и постигнути резултати, као и велики број
+            такмичења, то и потврђују.
+        </p>
+
+        <h4 class="mt-4">Фудбалски клубови</h4>
+        <p>
+            ФК Лозница; ФК Гучево – Бања Ковиљача; ФК Подриње – Лозничко Поље; ФК Слога – Стража;
+            ФК Младост – Д. Добрић; ФК Борац – Козјак; ФК Младост – Брезјак; ФК Антимон – Зајача;
+            ФК Раднички – Стобекс – Клупци; ФК Борац – Лешница; ФК Јадар – Ступница;
+            ФК 14. октобар – Драгинац; ФК Јелав; ФК Јадар – Горњи Добрић;
+            ФК Синђелић – Липница; ФК Лук – Воћњак; ФК ТЕ Гучево – Трбушница;
+            ФК Прва Искра – Руњани; ФК Слога – Липнички Шор; ФК Студенац – Горња Ковиљача;
+            ФК Слога – Коренита.
+        </p>
+
+        <h4 class="mt-4">Кошарка</h4>
+        <ul>
+            <li>КК Лозница</li>
+            <li>ЖКК Лозница</li>
+        </ul>
+
+        <h4>Рукомет</h4>
+        <ul>
+            <li>МРК Лозница</li>
+            <li>ЖРК Лозница – Град</li>
+        </ul>
+
+        <h4>Одбојка</h4>
+        <ul>
+            <li>ОК Ново насеље – Лозница</li>
+            <li>Пролетер – Лозница</li>
+        </ul>
+
+        <hr class="my-5">
+
+        <!-- INFRASTRUKTURA -->
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h3>Инфраструктурни објекти</h3>
+
+                <p>
+                    Град Лозница поседује спортску дворану која је у саставу Установе за физичку културу
+                    „Лагатор“, капацитета 2.650 места, са борилиштем површине 1.116 m².
+                    Дворана се користи за спортске и културне манифестације, као и за часове физичког
+                    васпитања.
+                </p>
+
+                <p>
+                    Нови стадион по УЕФА стандардима Лозница добија у пролеће, до краја априла 2023. године.
+                    Капацитет стадиона је између 8.000 и 8.500 посетилаца.
+                </p>
+
+                <p>
+                    Поред тога, школске хале користе ученици у школама и бројни спортски клубови.
+                </p>
+            </div>
+
+            <!-- SLIKA STADIONA -->
+            <div class="col-md-5">
+                <img src="./slike/stadion-loznica.jpg" alt="Стадион у Лозници" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+<footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+        <div class="row text-center text-md-start">
+
+            <!-- O GRADU -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-3">Град Лозница</h5>
+                <p class="text-secondary">
+                    Лозница је град богате историје, културе и природних лепота,
+                    смештен у срцу Подриња.
+                </p>
+            </div>
+
+            <!-- BRZI LINKOVI -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-3">Брзи линкови</h5>
+                <ul class="list-unstyled">
+                    <li><a href="vesti.html" class="text-secondary text-decoration-none">Вести</a></li>
+                    <li><a href="turizam.html" class="text-secondary text-decoration-none">Туризам</a></li>
+                    <li><a href="galerija.html" class="text-secondary text-decoration-none">Галерија</a></li>
+                    <li><a href="kontakt.html" class="text-secondary text-decoration-none">Контакт</a></li>
+                </ul>
+            </div>
+
+            <!-- KONTAKT -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-3">Контакт</h5>
+                <p class="text-secondary mb-1">
+                    <i class="bi bi-envelope"></i> kontakt@loznica.rs
+                </p>
+                <p class="text-secondary mb-1">
+                    <i class="bi bi-telephone"></i> +381 15 123 456
+                </p>
+                <p class="text-secondary">
+                    <i class="bi bi-geo-alt"></i> Лозница, Србија
+                </p>
+            </div>
+
+        </div>
+
+        <hr class="text-secondary">
+
+        <!-- DONJI DEO -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p class="mb-2 mb-md-0 text-secondary">
+                © 2025 Град Лозница. Сва права задржана.
+            </p>
+
+            <div class="d-flex align-items-center gap-2">
+                <img src="./slike/viser.png" alt="Лого" style="height: 32px;">
+                <span class="text-secondary">Марко Јаковљевић</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+<script>
+    function updateDateTime() {
+        // vreme
+        const timeOptions = {
+            timeZone: "Europe/Belgrade",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit"
+        };
+        const nowTime = new Date().toLocaleTimeString("sr-RS", timeOptions);
+        document.getElementById("trenutnoVreme").textContent = nowTime;
+
+        // datum
+        const dateOptions = {
+            timeZone: "Europe/Belgrade",
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric"
+        };
+        const nowDate = new Date().toLocaleDateString("sr-RS", dateOptions);
+        document.getElementById("trenutniDatum").textContent = nowDate;
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+</script>
+
+</html>
