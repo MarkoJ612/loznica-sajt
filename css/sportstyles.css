@@ -1,0 +1,46 @@
+body{
+    font-family: "Roboto Slab", serif;
+}
+
+.navbar{
+    background-color:rgb(233, 233, 233) !important;
+}
+
+.upper-nav{
+    background-color:rgb(208, 208, 208) !important;
+    width:100%;
+}
+.navbar{
+    padding:0 !important;
+}
+
+.nav-link{
+    color: green !important;
+    transition: 
+        color 0.2s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.nav-link:hover{
+    color: white !important;
+    background-color: green;
+    transform: translateY(-3px);
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: green;
+    color: white;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+html, body {
+    overflow-x: hidden;
+}
